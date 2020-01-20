@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Филипп Попов](https://up.htmlacademy.ru/htmlcss/27/user/1245555).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 

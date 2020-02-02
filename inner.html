@@ -22,7 +22,73 @@
 	</header>
 	<main>
 		<section>
-			<!-- Здесь будет форма -->
+			<form action="#" method="get">
+				<div>
+					<p>Инфраструктура:</p>
+					<ul>
+						<li>
+							<label for="pool">Бассейн</label>
+							<input type="checkbox" name="pool" id="pool" checked>
+						</li>
+						<li>
+							<label for="parking">Парковка</label>
+							<input type="checkbox" name="parking" id="parking">
+						</li>
+						<li>
+							<label for="net">Wi-Fi</label>
+							<input type="checkbox" name="net" id="net">
+						</li>	
+					</ul>	
+				</div>
+				
+				<div>
+					<p>Тип жилья:</p>
+					
+					<ul>
+						<li>
+							<label for="inn">Гостиница</label>
+							<input type="checkbox" name="inn" id="inn" checked>
+						</li>	
+						<li>
+							<label for="motel">Мотель</label>
+							<input type="checkbox" name="motel" id="motel" checked>
+						</li>
+						<li>
+							<label for="apartment">Апартаменты</label>
+							<input type="checkbox" name="apartment" id="apartment" checked>
+						</li>
+					</ul>	
+				</div>
+						
+				<div>
+					<p>Стоимость в сутки (Р):</p>
+					
+					<span>
+						<p>от 0</p>
+						<p>До 3000</p>
+					</span>
+					
+					<input type="range" min="0" max="3000" step="1" value="#">
+				</div>
+				<input type="submit" value="Показать">
+			</form>
+		</section>
+		
+		<section>
+			<h2>Найдено: 3</h2>
+			
+			<p>Сортировка:</p>
+			
+			<ul>
+				<li>По цене</li>
+				<li>По типу</li>
+				<li>По рейтингу</li>
+			</ul>
+			
+			<span>
+				<img src="img/icon-up.svg" width="11" height="10" alt="сортировать по возрастанию">
+				<img src="img/icon-down.svg" width="11" height="10" alt="сортировать по убыванию">
+ 			</span>
 		</section>
 		
 		<section>
@@ -35,11 +101,11 @@
 						<a href="#">Забронировать</a>
 						<img src="img/arma.jpg" width="135" height="90" alt="фото Amara Resort & Spa">
 						<span>
-							<img src="img/star.svg" width="18" height="17" alt="звезда">
-							<img src="img/star.svg" width="18" height="17" alt="звезда">
-							<img src="img/star.svg" width="18" height="17" alt="звезда">
-							<img src="img/star.svg" width="18" height="17" alt="звезда">
-							<img src="img/star.svg" width="18" height="17" alt="звезда">
+							<img src="img/star.svg" width="18" height="17" alt="оценка отеля пять звезд">
+							<img src="img/star.svg" width="18" height="17" alt="#">
+							<img src="img/star.svg" width="18" height="17" alt="#">
+							<img src="img/star.svg" width="18" height="17" alt="#">
+							<img src="img/star.svg" width="18" height="17" alt="#">
 						</span>
 						<p>Рейтинг: 8,5</p>
 					</li>
@@ -51,9 +117,9 @@
 						<a href="#">Забронировать</a>
 						<img src="img/qail.jpg" width="135" height="90" alt="фото Desert Quail Inn">
 						<span>
-							<img src="img/star.svg" width="18" height="17" alt="звезда">
-							<img src="img/star.svg" width="18" height="17" alt="звезда">
-							<img src="img/star.svg" width="18" height="17" alt="звезда">
+							<img src="img/star.svg" width="18" height="17" alt="оценка отеля три звезды">
+							<img src="img/star.svg" width="18" height="17" alt="#">
+							<img src="img/star.svg" width="18" height="17" alt="#">
 						</span>
 						<p>Рейтинг: 8,9</p>
 					</li>
@@ -65,8 +131,8 @@
 						<a href="#">Забронировать</a>
 						<img src="img/villas.jpg" width="135" height="90" alt="фото Villas at Poco Diablo">
 						<span>
-							<img src="img/star.svg" width="18" height="17" alt="звезда">
-							<img src="img/star.svg" width="18" height="17" alt="звезда">
+							<img src="img/star.svg" width="18" height="17" alt="оценка отеля две звезды">
+							<img src="img/star.svg" width="18" height="17" alt="#">
 						</span>
 						<p>Рейтинг: 9,2</p>
 					</li>

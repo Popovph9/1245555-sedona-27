@@ -21,7 +21,7 @@
 		</nav>
 	</header>
 	<main>
-			<h1>Седона</h1>
+			<h1 class="visually-hidden">Седона</h1>
 			<img src="img/welcome-logo.svg" width="459" height="353" alt="приветственное лого">
 		
 		<section>
@@ -82,9 +82,34 @@
 				и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			
 			<button>Поиск гостиницы в седоне</button>
-			
-			<!-- Здесь будет форма -->
-			
+			<!-- Потап формы -->
+			<form action="#" method="post">
+				<p>
+					<label for="arrival-field">Дата заезда:</label>
+					<input type="date" name="arrival-field" id="arrival-field" placeholder="24 апреля 2017">
+				</p>
+				<p>
+					<labe for="departure-field">Дата выезда:</labe>
+					<input type="date" name="departure-field" id="departure-field" placeholder="4 июля 2017">
+				</p>
+				<div>
+					<label for="adults-field">Взрослые:</label>
+					<input type="number" name="adults-field" id="adults-field" placeholder="2">
+					<button type="button">-</button>
+					<button type="button">+</button>	
+				</div>
+				<div>
+					<label for="children-field">Дети:</label>
+					<input type="number" name="children-field" id="children-field" placeholder="0">
+					<button type="button">-</button>
+					<button type="button">+</button>	
+				</div>
+				<input type="submit" value="Найти">
+				<span>
+					<button type="button"><img src="img/calendar.png" width="21" height="22" alt="Календарь"></button>
+					<button type="button"><img src="img/calendar.png" width="21" height="22" alt="Календарь"></button>
+				</span>
+			</form>
 			<img src="img/map.jpg" width="1200" height="593" alt="карта">
 		</section>
 		

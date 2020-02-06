@@ -1,1 +1,257 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: 'PT Sans', Arial sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #333333;
+	text-transform: uppercase;
+	
+	background-color: #f2f2f2;
+}
+
+a {
+	text-decoration: none;
+}
+
+.site-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	
+	list-style: none;
+	
+	background-color: #ffffff;
+	vertical-align: center;
+}
+
+.site-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:link {
+	color: #766357;
+}
+
+.site-navigation a:hover {
+	color: #81b3d2;
+}
+
+.site-navigation a:focus {
+	color: #81b3d2;
+}
+
+.site-navigation a:active {
+	color: #b3b3b3;
+}
+ 
+
+.site-navigation li:nth-of-type(1),
+.site-navigation li:nth-of-type(2) {
+	text-align: left;
+}
+
+.site-navigation li:nth-of-type(3),
+.site-navigation li:nth-of-type(4) {
+	text-align: right;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.sedona-logo {
+	background-color: #ffffff;	
+}
+
+.welcome-logo {
+	background:
+		url("../img/background-mask.png") bottom no-repeat,
+		url("../img/main-background.jpg") center no-repeat;
+}
+
+.intro {
+	font-size: inherit;
+	line-height: 26px;
+	color: inherit;
+	text-align: center;
+	
+	background: #ffffff;
+}
+
+.intro h3 {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #000000;
+	text-align: center;
+}
+
+/*Тут будут блоки из второй части задания
+
+*/
+
+.booking {
+	font-size: inherit;
+	line-height: 24px;
+	color: inherit;
+	text-align: center;
+	
+	background: #ffffff;
+}
+
+.booking h3 {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 36px;
+	color: #000000;
+	text-align: center;
+}
+
+.booking-button {
+	font-size: 21;
+	font-weight: bold;
+	line-height: 26px;
+	text-align: center;
+	color: #ffffff;
+	
+	background-color: #766357;
+	
+	border: 0px;
+}
+
+.booking-button.hotel-button {
+	font-size: 14;
+	font-weight: bold;
+	line-height: 21px;
+}
+
+.booking-button:hover,
+.booking-button:focus {
+	background-color:#604e43;
+}
+
+.booking-button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+} 
+
+.info-button {
+	font-size: 14;
+	font-weight: bold;
+	line-height: 21px;
+	text-align: center;
+	color: #ffffff;
+	
+	background-color: #81b3d2;
+	
+	border: 0px;
+}
+
+.info-button:hover,
+.info-button:focus {
+	background-color:#669ec0;
+}
+
+.info-button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
+
+/*Тут будут стили формы брони  из второй части задания*/
+
+
+/* Стили для формы поиска отелей*/
+
+.hotels-main {
+	font-size: inherit;
+	line-height: inherit;
+	color: #333333;
+	
+	background-color: #fefefe;
+}
+
+.hotels-list {
+	list-style: none;
+}
+
+.hotels-list h2 {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #000000;
+}
+
+.star-list {
+	list-style: none;
+}
+
+.main-footer {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hotel-footer {
+	background-color: rgba(254, 254, 254, 0.9);
+}
+
+.footer-contacts {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	
+	color: #000000;
+}
+
+.footer-social {
+	list-style: none;
+}
+
+.social-button {
+	background-color: #81b3d2;
+}
+
+
+.social-button:hover,
+.social-button:focus {
+ 	background-color: #669ec0;
+}
+
+/*.social-button:active {
+}*/
+
+.footer-copyright {
+	font-size: 14px;
+	line-height: 26px;
+	
+	color: #000000;
+}
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
 

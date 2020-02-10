@@ -30,7 +30,7 @@ a {
 	color: #000000;
 }
 
-.site-navigation li:first-of-type {
+a .active {
 	color: #766357;
 }
 
@@ -80,9 +80,35 @@ a {
 	text-align: center;
 }
 
-/*Тут будут блоки из второй части задания
+.features-section ul {
+	list-style: none;
+	text-align: center;
+}
 
-*/
+.features {
+	background-color: #eeeeee;
+}
+
+.features h3 {
+	font-size: 21;
+	font-weight: bold;
+	color: #000000;
+}
+
+.features li:first-child,
+.features li:nth-child(2) {
+	color: white;
+	background-color: #81b3d2; 
+}
+
+.features li:first-child h3,
+.features li:nth-child(2) h3 {
+	color: white;
+} 
+
+.perks {
+	background-color: white;
+}
 
 .booking {
 	line-height: 24px;
@@ -100,7 +126,7 @@ a {
 }
 
 .booking-button {
-	font-size: 21;
+	/*font-size: 21;*/
 	font-weight: bold;
 	line-height: 26px;
 	text-align: center;
@@ -162,10 +188,119 @@ a {
 	background-color: #5496bd;
 }
 
-/*Тут будут стили формы брони  из второй части задания*/
+.form-section {
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	
+	background-color: white;
+}
+
+.booking-item input,
+.booking-adults input,
+.booking-children input {
+	font: inherit;
+	
+	background-color: #f2f2f2;
+}
+
+.minus-button,
+.plus-button {
+	min-width: 38px;
+	min-height: 38px;
+	border: 0px;
+	background-color: #f2f2f2;
+	
+}
+
+.submit-button {
+	/*font-size: 21;*/
+	font-weight: bold;
+	line-height: 26px;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	
+	width:458px;
+	height: 58px;
+	
+	background-color: #81b3d2;
+	
+	
+	border: 0px;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+	background-color: #669ec0;
+}
+
+.submit-button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color:#5496bd;
+}
+
+.search-form {
+	color: white;
+	
+	background: url("../img/form-background.jpg") center no-repeat;
+	background-color: #000000;
+}
+
+.search-form h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.search-form p {
+	font-weight: bold;
+}
+
+.range-section span {
+	font-weight: 400;
+}
+
+.range-button {
+	width: 133px;
+	height: 32px;
+	
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	
+	background-color: transparent;
+	
+	border: 2px solid white;
+}
+
+.range-button:hover,
+.range-button:focus {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.results {
+	font-size: 12px;
+	line-height: 18px;
+	
+	background-color: #ffffff;
+}
+
+.results ul {
+	list-style: none;
+}
+
+.results h3 {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+}
 
 
-/* Стили для формы поиска отелей*/
+
+/* стили для ссылок и кнопок сортировки чуть позже*/
+
 
 .hotels-main {
 	font-size: inherit;
@@ -173,6 +308,8 @@ a {
 	color: #333333;
 	
 	background-color: #fefefe;
+	
+	border: 0px;
 }
 
 .hotels-list {
@@ -223,16 +360,7 @@ a {
  	background-color: #669ec0;
 }
 
-/*.social-button:active.img {
-	fill: ;*/
-}
-
-.footer-copyright {
-	line-height: 26px;
-	
-	color: #000000;
-}
-
+/* стили для кнопок соц сетей и лого академии чуть позже */
 
 
 

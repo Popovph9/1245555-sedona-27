@@ -30,7 +30,7 @@ a {
 	color: #000000;
 }
 
-a .active {
+a.active {
 	color: #766357;
 }
 
@@ -90,24 +90,22 @@ a .active {
 }
 
 .features h3 {
-	font-size: 21;
-	font-weight: bold;
+	font-size: 21px;
 	color: #000000;
 }
 
-.features li:first-child,
-.features li:nth-child(2) {
-	color: white;
+.main-feature {
+	color: #ffffff;
 	background-color: #81b3d2; 
 }
 
-.features li:first-child h3,
-.features li:nth-child(2) h3 {
-	color: white;
+.main-feature h3,
+.main-feature h3 {
+	color: #ffffff;
 } 
 
 .perks {
-	background-color: white;
+	background-color: #ffffff;
 }
 
 .booking {
@@ -119,7 +117,6 @@ a .active {
 
 .booking h3 {
 	font-size: 30px;
-	font-weight: bold;
 	line-height: 36px;
 	color: #000000;
 	text-align: center;
@@ -194,7 +191,7 @@ a .active {
 	color: #000000;
 	text-align: center;
 	
-	background-color: white;
+	background-color: #ffffff;
 }
 
 .booking-item input,
@@ -205,6 +202,18 @@ a .active {
 	background-color: #f2f2f2;
 }
 
+.booking-item input:hover {
+	background-color: #ebebeb;
+	
+}
+
+.booking-item input:focus {
+	background-color: #ffffff;
+	
+	outline: 2px solid #e5e5e5;
+}
+
+
 .minus-button,
 .plus-button {
 	min-width: 38px;
@@ -212,6 +221,30 @@ a .active {
 	border: 0px;
 	background-color: #f2f2f2;
 	
+	font-weight: bold;
+	color: #cacaca;
+}
+
+.minus-button:focus,
+.minus-button:hover,
+.plus-button:focus,
+.plus-button:hover {
+	color: #000000;
+}
+
+.minus-button:active,
+.plus-button:active  {
+	color: #81b3d2;
+}
+
+.calendar:hover path,
+.calendar:focus path {
+	fill: #000000;
+}
+
+.calendar:active path,
+.calendar:active path {
+	fill: #81b3d2;
 }
 
 .submit-button {
@@ -242,19 +275,15 @@ a .active {
 }
 
 .search-form {
-	color: white;
+	color: #ffffff;
 	
 	background: url("../img/form-background.jpg") center no-repeat;
 	background-color: #000000;
 }
 
-.search-form h3 {
-	font-size: 16px;
-	font-weight: bold;
-}
-
 .search-form p {
 	font-weight: bold;
+	font-size: 16px;
 }
 
 .range-section span {
@@ -266,12 +295,12 @@ a .active {
 	height: 32px;
 	
 	text-transform: uppercase;
-	color: white;
+	color: #ffffff;
 	text-align: center;
 	
 	background-color: transparent;
 	
-	border: 2px solid white;
+	border: 2px solid #ffffff;
 }
 
 .range-button:hover,
@@ -289,18 +318,53 @@ a .active {
 
 .results ul {
 	list-style: none;
+	padding: 0;
 }
 
-.results h3 {
+.results h2 {
 	font-size: 21px;
-	font-weight: bold;
 	line-height: 26px;
 }
 
 
+.cost {
+	color: #81b3d2;
+}
 
-/* стили для ссылок и кнопок сортировки чуть позже*/
+.type,
+.rating {
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom:  1px dotted #81b3d2; 
+}
 
+.results-list a:hover,
+.results-list a:focus {
+	color: #81b3d2;
+	border-bottom:  1px dotted #81b3d2;
+}
+
+.results-list a:active,
+.results-list a:active {
+	color: #000000;
+	border-bottom: none;
+}
+
+.arrows-list {
+	list-style: none;
+	padding: 0; 
+}
+
+.arrow-up:hover path,
+.arrow-up:focus path,
+.arrow-down:hover path,
+.arrow-down:focus path{
+	fill: #000000;
+}
+
+.arrow-up:active path,
+.arrow-down:active path {
+	fill: #81b3d2;
+}
 
 .hotels-main {
 	font-size: inherit;
@@ -318,9 +382,21 @@ a .active {
 
 .hotels-list h2 {
 	font-size: 21px;
-	font-weight: bold;
 	line-height: 26px;
 	color: #000000;
+}
+
+.hotels-list a {
+	color: #000000;
+}
+
+.hotels-list a:hover,
+.hotels-list a:focus {
+	color: #81b3d2;
+}
+
+.hotels-list a:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .star-list {
@@ -344,27 +420,76 @@ a .active {
 }
 
 .footer-social {
+	display: flex;
+  	width: 150px;
+	flex-wrap: wrap;
+  	justify-content: space-between;
+	
 	list-style: none;
+	margin: 0 auto;
+  	padding: 0;
+	
 	
 }
 
 .social-button {
+	display: flex;
 	width: 46px;
-	min-height: 48px;
+	height: 48px;
+	
+	
 	background-color: #81b3d2;
+	
+	align-items: center;
+  	justify-content: center;
 }
 
 
 .social-button:hover,
 .social-button:focus {
- 	background-color: #669ec0;
+ 	background-color: #669ec0; 
 }
 
-/* стили для кнопок соц сетей и лого академии чуть позже */
+.social-button:active {
+	background-color: #5496bd;
+}
 
 
-
+.social-button:active path {
+	fill: #5496bd;
+	fill-opacity: 0.3;
+}
 	
+.footer-copyright {
+	display: flex;
+	width:199px;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	
+	margin: 0 auto;
+  	padding: 0;
+	line-height:  26px;
+	
+}
+
+.copyright-logo:hover path,
+.copyright-logo:focus path {
+	fill: #81b3d2;
+}
+
+.copyright-logo:active path {
+	fill: #bdbbbc;
+}
+
+
+
+
+
+
+
+
 
 
 

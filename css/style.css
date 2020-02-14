@@ -12,11 +12,46 @@ body {
 	background-color: #f2f2f2;
 }
 
+.body-wrapper {
+	display: flex;
+	width: 1200px;
+	flex-direction: column;
+	padding: 0;
+	margin:  0 auto;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
 a {
 	text-decoration: none;
 }
 
+.main-header {	
+	display: flex;
+	width: 1200px;
+	min-height: 56px;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.main-navigation {
+	display: flex;
+	width: 1200px;
+	min-height: 56px;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .site-navigation {
+	display: flex;
+	width: 1200px;
+	min-height: 56px;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	
 	line-height: 26px;
 	font-weight: bold;
 	
@@ -24,6 +59,10 @@ a {
 	
 	background-color: #ffffff;
 	vertical-align: center;
+}
+
+.sedona-logo {
+	position: absolute;
 }
 
 .site-navigation a {
@@ -60,12 +99,31 @@ a.active {
 }
 
 .welcome-logo {
-	background:
-		url("../img/background-mask.png") bottom no-repeat,
-		url("../img/main-background.jpg") center no-repeat;
+	display: flex;
+	flex-direction:column;
+	align-content: center;
+	align-items: center;
+	justify-content: flex-end;
+	width: 1200px;
+	height: 773px;
+	background: url("../img/main-background.jpg") center no-repeat;
 }
 
+.logo {
+	display: block;
+	box-sizing: border-box;
+	margin-top: 132px;
+}
+
+
 .intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	
+	width: 1200px;
+	min-height: 216px;
 	line-height: 26px;
 	text-align: center;
 	
@@ -109,13 +167,21 @@ a.active {
 }
 
 .booking {
+	display: flex;
+	width: 1200px;
+	min-height: 336px;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	
 	line-height: 24px;
 	text-align: center;
 	
 	background: #ffffff;
 }
 
-.booking h3 {
+.booking h2 {
+	margin-top: 57px;	
 	font-size: 30px;
 	line-height: 36px;
 	color: #000000;
@@ -137,6 +203,8 @@ a.active {
 }
 
 .booking-button.main-button {
+	margin-top: auto;
+	
 	width: 568px;
 	min-height: 86px;
 }
@@ -161,6 +229,8 @@ a.active {
 } 
 
 .info-button {
+	display: block;
+	box-sizing: border-box;
 	font-size: 14;
 	font-weight: bold;
 	line-height: 21px;
@@ -274,7 +344,7 @@ a.active {
 	background-color:#5496bd;
 }
 
-.search-form {
+.search-form {	
 	color: #ffffff;
 	
 	background: url("../img/form-background.jpg") center no-repeat;
@@ -367,6 +437,10 @@ a.active {
 }
 
 .hotels-main {
+	display: flex;
+	width: 1200px;
+	min-height: 453px;
+	
 	font-size: inherit;
 	line-height: inherit;
 	color: #333333;
@@ -377,8 +451,16 @@ a.active {
 }
 
 .hotels-list {
+	display: flex;
+	width: 1200px;
+	min-height: 453px;
+	flex-direction: column;
+	justify-content: space-between;
 	list-style: none;
+	padding: 0;
+	margin: 0 auto;
 }
+
 
 .hotels-list h2 {
 	font-size: 21px;
@@ -401,17 +483,96 @@ a.active {
 
 .star-list {
 	list-style: none;
+	
+	display: flex;
+	flex-direction: row;
 }
+
+.amara {
+	display: flex;
+	width: 1200px;
+	min-height: 151px;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	
+	
+}
+
+.desert {
+	display: flex;
+	width: 1200px;
+	min-height: 151px;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+}
+
+.villas {
+	display: flex;
+	width: 1200px;
+	min-height: 151px;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+}
+.hotel-card {
+	
+	width: 258px;
+	min-height: 90px;
+	margin-left: 30px;
+	
+}
+.raiting-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	width: 110px;
+	heigh: 27px;
+	
+	background-color: #f2f2f2;
+}
+.star-section {
+	display: flex;
+	width: 110px;
+	min-height: 91px;
+	flex-direction: column;
+	justify-content: center;
+	
+	margin-right: 73px;
+	margin-left: auto;
+}
+
+.hostel-photo {
+	margin-left: 72px;
+}
+
+
+
 
 .main-footer {
+	display: flex;
+	width: 1200px;
+	min-height: 120px;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	background-color: rgba(255, 255, 255, 0.5);
+		
+	
 }
 
-.hotel-footer {
+.hotel-footer.main-footer {
 	background-color: rgba(254, 254, 254, 0.9);
 }
 
 .footer-contacts {
+	display: block;
+	box-sizing: border-box;
+	margin-left: 132px;
+	
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
@@ -436,7 +597,6 @@ a.active {
 	display: flex;
 	width: 46px;
 	height: 48px;
-	
 	
 	background-color: #81b3d2;
 	
@@ -467,6 +627,8 @@ a.active {
 	align-content: center;
 	align-items: center;
 	justify-content: space-between;
+	margin-right: 101px;
+
 	
 	margin: 0 auto;
   	padding: 0;

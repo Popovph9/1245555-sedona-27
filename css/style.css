@@ -104,15 +104,21 @@ a.active {
 	align-content: center;
 	align-items: center;
 	justify-content: flex-end;
+	
 	width: 1200px;
-	height: 773px;
-	background: url("../img/main-background.jpg") center no-repeat;
+	height: 724px;
+	
+	background: url("../img/main-background.jpg") bottom no-repeat;
+	background-size: cover;
+	
+	
 }
 
 .logo {
-	display: block;
-	box-sizing: border-box;
-	margin-top: 132px;
+	
+	margin-bottom: auto;
+	margin-top: 82px;
+	
 }
 
 

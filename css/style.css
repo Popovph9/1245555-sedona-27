@@ -18,9 +18,7 @@ body {
 	flex-direction: column;
 	padding: 0;
 	margin:  0 auto;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+
 }
 
 a {
@@ -30,23 +28,17 @@ a {
 .main-header {	
 	display: flex;
 	width: 1200px;
-	min-height: 56px;
-	flex-direction: row;
-	justify-content: center;
 }
 
 .main-navigation {
 	display: flex;
 	width: 1200px;
-	min-height: 56px;
-	flex-direction: row;
-	justify-content: center;
+
 }
 
 .site-navigation {
 	display: flex;
 	width: 1200px;
-	min-height: 56px;
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: center;
@@ -58,7 +50,6 @@ a {
 	list-style: none;
 	
 	background-color: #ffffff;
-	vertical-align: center;
 }
 
 .sedona-logo {
@@ -174,8 +165,6 @@ a.active {
 
 .booking {
 	display: flex;
-	width: 1200px;
-	min-height: 336px;
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
@@ -209,8 +198,6 @@ a.active {
 }
 
 .booking-button.main-button {
-	margin-top: auto;
-	
 	width: 568px;
 	min-height: 86px;
 }
@@ -458,8 +445,6 @@ a.active {
 
 .hotels-list {
 	display: flex;
-	width: 1200px;
-	min-height: 453px;
 	flex-direction: column;
 	justify-content: space-between;
 	list-style: none;
@@ -494,10 +479,8 @@ a.active {
 	flex-direction: row;
 }
 
-.amara {
+.hotels-list-item {
 	display: flex;
-	width: 1200px;
-	min-height: 151px;
 	flex-direction: row;
 	align-content: center;
 	align-items: center;
@@ -505,23 +488,6 @@ a.active {
 	
 }
 
-.desert {
-	display: flex;
-	width: 1200px;
-	min-height: 151px;
-	flex-direction: row;
-	align-content: center;
-	align-items: center;
-}
-
-.villas {
-	display: flex;
-	width: 1200px;
-	min-height: 151px;
-	flex-direction: row;
-	align-content: center;
-	align-items: center;
-}
 .hotel-card {
 	
 	width: 258px;
@@ -541,8 +507,6 @@ a.active {
 }
 .star-section {
 	display: flex;
-	width: 110px;
-	min-height: 91px;
 	flex-direction: column;
 	justify-content: center;
 	

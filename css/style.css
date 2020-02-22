@@ -35,7 +35,7 @@ a {
 	position: relative;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: center;
+
 	
 	margin: 0;
 	padding: 0;
@@ -57,12 +57,8 @@ a {
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
-	width: 1200px;
+
 	flex-direction: row;
-	justify-content: space-around;
-	
-	align-content: center;
-	align-items: center;
 	
 	margin: 0;
 	padding: 0;
@@ -72,7 +68,7 @@ a {
 	
 	list-style: none;
 	
-	background-color: #ffffff;	
+	background-color: #ffffff;
 }
 
 
@@ -80,7 +76,7 @@ a {
 .sedona-logo {
 	position: absolute;
 	top: 0;
-	rigt: 50%;
+	left: 529px;
 }
 
 .site-navigation a {
@@ -91,25 +87,37 @@ a {
 }
 
 .site-navigation li {
-	display:block;
-	box-sizing: border-box;
-	
+	display: flex;
 	width: 239px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 
 
+.info {
+	margin-left: 72px;
+}
 
-
-.nfo,
 .media {
-	text-align: left;
+}
+
+	
+.full-map {
+	margin-left: 100px;
+}
+
+.hostel {
+	margin-right: 72px;
+}
+
+.info,
+.media {
+	justify-content: flex-start;
 }
  
 .full-map,
 .hostel {
-	text-align: right;
+	justify-content: flex-end;
 }
 
 a.active {
@@ -544,8 +552,20 @@ margin-right: auto;
 .minus-button {
 	order: 2;
 	margin-left: 41px;
+	position: relative;
 }
 
+.minus-button::after {
+	content:"";
+	position: absolute;
+	top: 17px;
+	left: 13px;
+	
+	
+	background-color: #cacaca;
+	width: 12px;
+	height: 3px;
+}
 
 .booking-item input:hover {
 	background-color: #ebebeb;
@@ -577,7 +597,6 @@ margin-right: auto;
 	border: 0px;
 	background-color: #f2f2f2;
 	
-	font-weight: bold;
 	color: #cacaca;
 }
 
@@ -591,6 +610,7 @@ margin-right: auto;
 .plus-button:hover {
 	color: #000000;
 }
+
 
 .minus-button:active,
 .plus-button:active  {
@@ -683,11 +703,11 @@ margin-right: auto;
 }
 
 .hotel-features {
-	margin-left: 32px;
+	margin-left: 72px;
 }
 
 .hotel-types {
-	margin-left: 170px;
+	margin-left: 115px;
 }
 
 .search-list {
@@ -720,7 +740,6 @@ margin-right: auto;
 .range-section  {
 	width: 330px;
 	color: #ffffff;
-  	text-transform: uppercase;
 	
 	margin-left: auto;
 	margin-right: 74px;
@@ -1009,7 +1028,7 @@ margin-right: auto;
 .hotels-list-item {
 	display: flex;
 	flex-direction: row;
-	width: 1200px;
+	
 	align-items: center;
 	
 	margin-bottom: 1px;
@@ -1042,7 +1061,7 @@ margin-right: auto;
 
 .card-buttons {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	margin-bottom: 30px;
 }
 
@@ -1070,7 +1089,7 @@ margin-right: auto;
 	flex-wrap: wrap;
 	flex-direction: column;
 
-	margin-left:auto;
+	margin-left: 522px;
 	margin-right: 73px;
 }
 

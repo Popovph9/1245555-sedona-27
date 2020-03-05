@@ -19,20 +19,21 @@
 			
 			<nav class="main-navigation">
 				<ul class="site-navigation">
-				  <li class="info"><a class="active">Информация</a></li>
-				  <li class="media"><a href="#">Фото и видео</a></li>
-					<li class="full-map"><a href="#">Карта штата</a></li>
-					<li class="hostel"><a href="inner.html">Гостиницы</a></li>
+				  <li class="info"><a class="active">информация</a></li>
+				  <li class="media"><a href="#">фото и видео</a></li>
+					<li class="full-map"><a href="#">карта штата</a></li>
+					<li class="hostel"><a href="inner.html">гостиницы</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
 			<section class="welcome-logo">
 				<h1 class="visually-hidden">Седона</h1>
+				
 				<img class="logo" src="img/welcome-logo.svg" width="459" height="353" alt="приветственное лого">
-				<img class="mask-logo" src="img/background-mask.png" width="1203" height="59" alt="маска">
-			
-
+				<span class="mask-section">
+					<img class="mask-logo" src="img/background-mask.png" width="1203" height="59" alt="маска">
+				</span>
 
 				<div class="intro">
 					<h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
@@ -63,16 +64,16 @@
 						</li>
 					</ul>
 				<ul class="secondary-features">
-						<li>
+						<li class="square">
 							<h3>Небольшая площадь</h3>
 							<p>— №3 —</p>
 							<p>Все достопримечательности находятся очень близко</p>
 						</li>
-						<li><h3>Красивая дорога</h3>
+						<li class="road"><h3>Красивая дорога</h3>
 							<p>— №4 —</p>
 							<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 						</li>
-						<li><h3>Мало туристов</h3>
+						<li class="tourists"><h3>Мало туристов</h3>
 							<p>— №5 —</p>
 							<p>Большинство едет в гранд каньон и толпится там</p>
 						</li>
@@ -82,19 +83,19 @@
 
 					<ul class="perks">
 						<li>
-							<h3>Жильё</h3>
-							<p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-							<img src="img/icon-home.svg" width="75" height="72" alt="жилье">						
+							<h3 class="housing-title">Жильё</h3>
+							<p class="housing-description">рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+							<img class="housing-image" src="img/icon-home.svg" width="75" height="72" alt="жилье">						
 						</li>
 						<li>
-							<h3>Еда</h3>
-							<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-							<img src="img/icon-burger.svg" width="74" height="70" alt="еда">
+							<h3 class="meal-title">Еда</h3>
+							<p class="meal-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+							<img class="meal-image" src="img/icon-burger.svg" width="74" height="70" alt="еда">
 						</li>
 						<li>
-							<h3>Сувениры</h3>
-							<p>Не только китайского, но и местного производства!</p>
-							<img src="img/icon-present.svg" width="64" height="76" alt="сувениры">
+							<h3 class="present-title">Сувениры</h3>
+							<p class="present-description">Не только китайского, но и местного производства!</p>
+							<img class="present-image" src="img/icon-present.svg" width="64" height="76" alt="сувениры">
 						</li>
 					</ul>
 			</section>
@@ -112,9 +113,9 @@
 			
 			<section class="form-section">
 				<form class="booking-form" action="#" method="post">
-					<p class="booking-item">
+					<p class="booking-item arrival">
 						<label for="arrival-field">Дата заезда:</label>
-						<input type="date" name="arrival-field" id="arrival-field" placeholder="24 апреля 2017">
+						<input type="text" name="arrival-field" id="arrival-field" placeholder="24 апреля 2017">
 					</p>
 
 					<a class="calendar calendar1" href="#">
@@ -125,9 +126,9 @@
 						</svg>
 					</a>
 
-					<p class="booking-item">
+					<p class="booking-item departure">
 						<label for="departure-field">Дата выезда:</label>
-						<input type="date" name="departure-field" id="departure-field" placeholder="4 июля 2017">
+						<input type="text" name="departure-field" id="departure-field" placeholder="4 июля 2017">
 					</p>
 
 					<a class="calendar calendar2" href="#">

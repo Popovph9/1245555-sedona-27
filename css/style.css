@@ -628,8 +628,8 @@ li  .present-title {
 
 	/*-Стили потапа главной страницы-*/
 .form-section{
-	position: relative;
-	/*display: none;*/
+	position: relative;	
+	
 }
 
 .booking-form {
@@ -649,12 +649,12 @@ li  .present-title {
 	line-height: 26px;
 	font-weight: bold;
 	color: #000000;
-
-	
 	background-color: #ffffff;
 }
 
-
+.form-close {
+	display: none;
+}
 
 
 .booking-item {
@@ -908,9 +908,9 @@ li  .present-title {
 	flex-direction: row;
 
 	padding-left: 72px;
-padding-right: 72px;
-padding-top: 26px;
-padding-bottom: 31px;	
+	padding-right: 72px;
+	padding-top: 26px;
+	padding-bottom: 32px;	
 	
 	color: #ffffff;
 	
@@ -947,33 +947,32 @@ padding-bottom: 31px;
 
 .search-item.pool {
 	margin-top: 0;
-	margin-bottom: 23px;
+	margin-bottom: 25px;
 }
 
-.pool svg {
-	margin-right: 13px;
+.pool label {
+	margin-left: 40px;
 }
+
+
 
 .search-item.net {
 	margin: 0;
 }
 
-.net svg {
-	margin-right: 16px;
+.net label {
+	margin-left: 39px;
 }
 
 .search-item.parking {
 	margin-top: 0;
-	margin-bottom: 22px;
+	margin-bottom: 25px;
 }
 
 .parking label {
-	padding-bottom: 1px;
+	margin-left: 39px;
 }
 
-.parking svg {
-	margin-right: 16px;
-}
 
 .hotel-types {
 	
@@ -986,46 +985,34 @@ padding-bottom: 31px;
 
 .search-item.inn {
 	margin-top: 0px;
-	margin-bottom: 23px;
+	margin-bottom: 25px;
 }
 
-.inn svg {
-	margin-left: 1px;
-	margin-right: 14px;
-}
 
 .inn label {
-	padding-bottom: 1px;
+	margin-left: 42px;
 }
 
 .search-item.motel {
 	margin-top: 0px;
-	margin-bottom: 22px;
+	margin-bottom: 25px;
 }
 
-.motel svg {
-	margin-left: 1px;
-	margin-right: 14px;
-}
 
 .motel label {
-	padding-bottom: 1px;
+	margin-left: 42px;
 }
 
 .search-item.apartment {
 	margin: 0;
 }
 
-.apartment svg {
-	padding-left: 1px;
-	margin-right: 14px;
-}
-
 .apartment label {
-	
+	margin-left: 42px;
 }
 
 .search-list {
+	position: relative;
 	display: flex;
 	margin: 0;
 	flex-wrap: wrap;
@@ -1045,6 +1032,52 @@ padding-bottom: 31px;
 .search-form p {
 	font-weight: bold;
 	font-size: 16px;
+}
+
+
+.search-list label::before {
+	position: absolute;
+	content: url("../img/checkbox-off.svg");
+
+}
+
+input[type="checkbox"]:checked ~ label::before {
+	content: url("../img/checkbox-on.svg");
+}
+
+input[type="checkbox"]:disabled ~ label::before {
+	opacity: 0.3;
+}
+
+
+.pool label::before {
+	right: 109px;
+}
+
+.net label::before {
+	right: 113px;
+	bottom: -6.5px;
+}
+
+.parking label::before {
+	right: 113px;
+}
+
+.inn label::before {
+	right: 109px;
+}
+
+.inn input[type="checkbox"]:unchecked ~ label:before {
+	right: 113px;
+}
+
+.motel label::before {
+	right: 109px;
+}
+
+.apartment label::before {
+	right: 109px;
+	bottom: -6.5px;
 }
 
  /*-Стили сложного фильтра-*/

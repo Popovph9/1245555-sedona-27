@@ -1067,10 +1067,6 @@ input[type="checkbox"]:disabled ~ label::before {
 	right: 109px;
 }
 
-.inn input[type="checkbox"]:unchecked ~ label:before {
-	right: 113px;
-}
-
 .motel label::before {
 	right: 109px;
 }

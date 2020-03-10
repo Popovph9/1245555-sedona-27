@@ -13,6 +13,7 @@ body {
 }
 
 .body-wrapper {
+	position: relative;
 	display: flex;
 	width: 1200px;
 	flex-direction: column;
@@ -155,12 +156,19 @@ a.active {
 	/*-Стили основного содержания-*/
 
 .welcome-logo {
+	position: relative;
 	display: flex;
 	flex-direction:column;
 	align-items: center;
 	
 	background: url("../img/main-background.jpg") bottom no-repeat;
 	background-size: cover;	
+}
+
+.welcome-logo::after {
+	position: absolute;
+	content: url("../img/background-mask.png");
+	top: 451px;
 }
 
 .logo {
@@ -186,7 +194,7 @@ a.active {
 
 	align-items: center;
 	width: 100%;
-	
+	margin-top: 80px;
 
 	line-height: 26px;
 	text-align: center;
@@ -1043,6 +1051,7 @@ li  .present-title {
 
 input[type="checkbox"]:checked ~ label::before {
 	content: url("../img/checkbox-on.svg");
+	margin-right: -4px;
 }
 
 input[type="checkbox"]:disabled ~ label::before {
@@ -1051,7 +1060,7 @@ input[type="checkbox"]:disabled ~ label::before {
 
 
 .pool label::before {
-	right: 109px;
+	right: 113px;
 }
 
 .net label::before {
@@ -1064,31 +1073,32 @@ input[type="checkbox"]:disabled ~ label::before {
 }
 
 .inn label::before {
-	right: 109px;
+	right: 113px;
 }
 
 .motel label::before {
-	right: 109px;
+	right: 113px;
 }
 
 .apartment label::before {
-	right: 109px;
+	right: 113px;
 	bottom: -6.5px;
 }
 
  /*-Стили сложного фильтра-*/
 
 .range-section  {
-	width: 330px;
+	width: 318px;
 	color: #ffffff;
 	
 	padding: 0;
 	margin-left: auto;
 	margin-right: 0;
+
 }
 
 .range-section p {
-	margin-bottom: 9px;
+	margin-bottom: 11px;
 	margin-top: 0;
 
  	font-weight: 600;
@@ -1097,7 +1107,7 @@ input[type="checkbox"]:disabled ~ label::before {
 }
 
 .price-controls {
-	height: 36px;
+	height: 32px;
 	margin-bottom: 20px;
 	
 	font-size: 0;
@@ -1112,7 +1122,7 @@ input[type="checkbox"]:disabled ~ label::before {
 	content: "";
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 158px;
 	
 	width: 2px;
 	height: 22px;
@@ -1126,16 +1136,19 @@ input[type="checkbox"]:disabled ~ label::before {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 21px;
+  padding-top: 4px;
 
   cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price{
   width: 90px;
   padding-left: 65px;
+}
+
+.price-controls .max-price{
+	margin-left: 57px;
 }
 
 .price-controls input {
@@ -1183,11 +1196,11 @@ input[type="checkbox"]:disabled ~ label::before {
 }
 
 .range-toggle-min {
-	left: 0;
+	left: 1px;
 }
 
 .range-toggle-max {	
-	left: 80%;
+	right: 45px ;
 }
 
 .range-toggle:hover {
@@ -1196,11 +1209,12 @@ input[type="checkbox"]:disabled ~ label::before {
 
 .range-button {
 	display: block;
-	margin: 0 auto;
+	margin-left: 85px;
 	padding: 6px 35px;
 	
-	width: 133px;
-	height: 32px;
+	box-sizing: border-box;
+	width: 137px;
+	height: 36px;
 	
   	line-height: 20px;
 	text-transform: uppercase;
@@ -1236,6 +1250,7 @@ input[type="checkbox"]:disabled ~ label::before {
 	margin: 0px;
 	background-color: #ffffff;
 
+	
 }
 
 .results::after {
@@ -1367,6 +1382,7 @@ input[type="checkbox"]:disabled ~ label::before {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
+	letter-spacing: 0.3px;
 }
 
 .hotels-list a {
@@ -1612,7 +1628,7 @@ input[type="checkbox"]:disabled ~ label::before {
 
 .main-footer.index-footer {
 	position: absolute;
-	top: 2642px;
+	bottom: 0;
 }
 
 .hotel-footer.main-footer {
@@ -1693,7 +1709,7 @@ input[type="checkbox"]:disabled ~ label::before {
 	flex-wrap: wrap;
 	
 	margin-top: 9px;
-	margin-left: 229px;
+	margin-left: 228px;
 	
 	line-height:  26px;	
 }

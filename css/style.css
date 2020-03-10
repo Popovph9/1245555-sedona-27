@@ -79,6 +79,7 @@ a {
 	position: absolute;
 	top: 0;
 	left: 530px;
+	z-index: 1;
 }
 
 .site-navigation a {

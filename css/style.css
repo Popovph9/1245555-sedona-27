@@ -162,31 +162,34 @@ a.active {
 	flex-direction:column;
 	align-items: center;
 	
-	background: url("../img/main-background.jpg") bottom no-repeat;
+	background: url("../img/main-background.jpg") center no-repeat;
 	background-size: cover;	
+	background-position-y: -83px;
+	
+	padding-top: 76px;
+	padding-bottom: 80px;
+}
+
+.welcome-logo::before {
+	position:absolute;
+	content: "";
+	width: 1200px;
+	height: 1px;
+	background-color: #ffffff;
+	bottom: 0px;
 }
 
 .welcome-logo::after {
 	position: absolute;
 	content: url("../img/background-mask.png");
-	top: 451px;
+	bottom: -5px;
 }
 
 .logo {
-	margin-top: 76px;
 	margin-bottom: 0;
 }
 
-.mask-sektion {
-	padding-left: 1px;
-}
 
-.mask-logo {
-	display: block;
-	box-sizing: border-box;
-	margin-top: 21px;
-	padding-right: 1px;
-}
 
 .intro {
 	display: flex;
@@ -195,7 +198,7 @@ a.active {
 
 	align-items: center;
 	width: 100%;
-	margin-top: 80px;
+	
 
 	line-height: 26px;
 	text-align: center;

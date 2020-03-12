@@ -177,12 +177,14 @@ a.active {
 	height: 1px;
 	background-color: #ffffff;
 	bottom: 0px;
+	right: 0;
 }
 
 .welcome-logo::after {
 	position: absolute;
 	content: url("../img/background-mask.png");
 	bottom: -5px;
+	right: -1px;
 }
 
 .logo {

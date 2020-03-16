@@ -213,7 +213,9 @@ a.active {
 .welcome-logo::after {
 	position: absolute;
 	content: url("../img/mask-logo.png");
-	bottom: -4px;
+	width: 1200px;
+	height: 57px;
+	bottom: 0px;
 	display: block;
 }
 
@@ -1315,6 +1317,9 @@ li  .present-title {
 	font-size: 16px;
 }
 
+input[type="checkbox"] {
+	display: none;
+}
 
 .search-list label::before {
 	position: absolute;

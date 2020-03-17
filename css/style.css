@@ -1,6 +1,4 @@
 
-
-
 body {
 	margin: 0;
 	padding: 0;
@@ -120,7 +118,8 @@ a {
 	display: flex;
 	wflex-wrap: wrap;
 	width: 20%;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	
 	padding-top: 0;
 	padding-bottom: 0;
@@ -215,7 +214,8 @@ a.active {
 	content: url("../img/mask-logo.png");
 	width: 1200px;
 	height: 57px;
-	bottom: 0px;
+	bottom: 0;
+	right: 0;
 	display: block;
 }
 
@@ -850,24 +850,42 @@ li  .present-title {
 	
 	z-index: 2;
 	
-	animation: slide-down 1s ease-in-out;
-	animation-fill-mode: forwards;
+	-webkit-animation: slide-down 1s ease-in-out;
+	
+	        animation: slide-down 1s ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
 }
 
 .form-close {
-	animation: slide-up 1s ease-in-out;
-	animation-fill-mode: forwards;
+	-webkit-animation: slide-up 1s ease-in-out;
+	        animation: slide-up 1s ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes slide-up {
+	from {}
+	
+	to{ -webkit-transform: translateY(-395px); transform: translateY(-395px) } 
 }
 
 
 @keyframes slide-up {
 	from {}
 	
-	to{ transform: translateY(-395px) } 
+	to{ -webkit-transform: translateY(-395px); transform: translateY(-395px) } 
+}
+
+@-webkit-keyframes slide-down {
+	from { -webkit-transform: translateY(-395px); transform: translateY(-395px)}
+	
+	to {}
 }
 
 @keyframes slide-down {
-	from { transform: translateY(-395px)}
+	from { -webkit-transform: translateY(-395px); transform: translateY(-395px)}
 	
 	to {}
 }
@@ -1319,7 +1337,7 @@ li  .present-title {
 
 input[type="checkbox"]:hover ~ label::before,
 input[type="checkbox"]:focus ~ label::before {
-	outline: auto;
+	outline: 2px solid #81b3d2;
 }
 
 .search-list label::before {
@@ -1953,6 +1971,7 @@ input[type="checkbox"]:disabled ~ label::before {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
@@ -1997,6 +2016,7 @@ input[type="checkbox"]:disabled ~ label::before {
 	line-height: 26px;
 	
 	color: #000000;
+	
 }
 
 .footer-contacts p:first-of-type {

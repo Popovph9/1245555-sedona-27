@@ -1986,7 +1986,7 @@ input[type="checkbox"]:disabled ~ label::before {
 	padding-bottom: 32px;
 	padding-left: 124px;
 	margin-bottom: 0;
-	padding-right: 101px;
+	padding-right: 100px;
 	
 	background-color: rgba(255, 255, 255, 0.9);
 		
@@ -2006,7 +2006,16 @@ input[type="checkbox"]:disabled ~ label::before {
 }
 
 .footer-contacts {
-	display: block;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	margin-top: 0;
@@ -2037,7 +2046,7 @@ input[type="checkbox"]:disabled ~ label::before {
 	    flex-wrap: wrap;
   	-webkit-box-pack: justify;
   	    -ms-flex-pack: justify;
-  	        justify-content: space-between;
+  	        justify-content: center;
 	
 	list-style: none;
   	padding: 0;
@@ -2083,6 +2092,15 @@ input[type="checkbox"]:disabled ~ label::before {
 	opacity: 0.3;
 }
 	
+.social-button.tv {
+	margin-left: 0;
+	margin-right: 6px;
+}
+
+.social-button.fb {
+	margin-right: 6px;
+}
+
 .hotel-footer .footer-social {
 	margin-left: 172px;
 }
@@ -2095,7 +2113,7 @@ input[type="checkbox"]:disabled ~ label::before {
 	    flex-wrap: wrap;
 	
 	margin-top: 9px;
-	margin-left: 228px;
+	margin-left: 229px;
 	
 	line-height:  26px;	
 }
@@ -2117,7 +2135,6 @@ input[type="checkbox"]:disabled ~ label::before {
 .copyright-logo:active path {
 	fill: #bdbbbc;
 }
-
 
 
 
